@@ -1,0 +1,11 @@
+{
+    "total": 0,
+    "sub": {
+        "admin": 0,
+        "bot": 0,
+        "fun": 0,
+        "general": 0,
+        "moderation": 0,
+        "tickets": 0
+    }
+}

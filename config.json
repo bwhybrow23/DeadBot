@@ -1,0 +1,22 @@
+{
+    "token": "NjU3NzIxODUxMTcwMTI3OTE1.Xf1VfA.F0mOVnrQcWDGM_HhpJAlbWKYHc0",
+    "prefix": "-",
+    "version": "1.0.0",
+    "mcname": "DeadCraft",
+    "channels": {
+        "welcome": "657662325087797293",
+        "leave": "657662325087797293",
+        "log": "657662410122985522"
+    },
+    "color": {
+        "red": 14165566,
+        "green": 1295876,
+        "yellow": 14672927,
+        "blue": 4886754
+    },
+    "ids": {
+        "stentorian": "346246641595973633",
+        "deadpicsel": "298951704475467777",
+        "guild": "657658276464295986"
+    }
+}
