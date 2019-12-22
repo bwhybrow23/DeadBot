@@ -2,7 +2,7 @@ module.exports = {
     name: "eval",
     category: "bot",
     description: "Run Node.JS code from within the bot",
-    example: "-eval 69*420-71",
+    usage: "-eval <code>",
     permission: "STENTORIAN",
     run: async (bot, message, args) => {
 

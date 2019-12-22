@@ -2,7 +2,7 @@ module.exports = {
     name: "txtcreate",
     category: "admin",
     description: "Create a text channel.",
-    example: "-txtcreate cool-channel",
+    usage: "-txtcreate <channel name>",
     permission: "ADMINS",
     run: async (bot, message, args) => {
 

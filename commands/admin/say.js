@@ -2,7 +2,7 @@ module.exports = {
     name: "say",
     category: "admin",
     description: "Gets the bot to say something in an embed.",
-    example: "-say DeadPicsel is the best streamer.",
+    usage: "-say <message>",
     permission: "ADMINS",
     run: async (bot, message, args) => {
 

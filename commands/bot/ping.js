@@ -2,7 +2,7 @@ module.exports = {
     name: "ping",
     category: "bot",
     description: "Find out about all information related to the bot's connection to Discord.",
-    example: "-status",
+    usage: "-ping",
     permission: "EVERYONE",
     run: async (bot, message, args) => {
 

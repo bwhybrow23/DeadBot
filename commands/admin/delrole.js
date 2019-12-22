@@ -2,7 +2,7 @@ module.exports = {
     name: "delrole",
     category: "admin",
     description: "Deletes mentioned role.",
-    example: "-delrole @CoolRole",
+    usage: "-delrole <@Role>",
     permission: "ADMINS",
     run: async (bot, message, args) => {
 

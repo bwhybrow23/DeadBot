@@ -1,7 +1,7 @@
 {
     "token": "NjU3NzIxODUxMTcwMTI3OTE1.Xf1VfA.F0mOVnrQcWDGM_HhpJAlbWKYHc0",
     "prefix": "-",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "mcname": "DeadCraft",
     "channels": {
         "welcome": "657662325087797293",
@@ -18,5 +18,9 @@
         "stentorian": "346246641595973633",
         "deadpicsel": "298951704475467777",
         "guild": "657658276464295986"
+    },
+    "roles": {
+        "staffRole": "657662291818315786",
+        "adminRole": "657658642161467412"
     }
 }

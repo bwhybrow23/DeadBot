@@ -2,7 +2,7 @@ module.exports = {
     name: "about",
     category: "bot",
     description: "Gives all the information about the bot.",
-    example: "-about",
+    usage: "-about",
     permission: "EVERYONE",
     run: async (bot, message, args) => {
 

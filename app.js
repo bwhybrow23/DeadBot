@@ -10,8 +10,8 @@ const botConfig = require("./config.json");
 bot.settings = botConfig;
 
 //FUNCTIONS TO MAKE THINGS WORK
-const logger = require("./functions/console.js");
-const utils = require("./functions/utilities.js");
+const logger = require("./main/functions/console.js");
+const utils = require("./main/functions/utilities.js");
 
 //COMMAND-USAGE.JSON UPDATES
 const cmdusage = JSON.parse(fs.readFileSync("./data/command-usage.json", "utf8"));
@@ -58,23 +58,23 @@ bot.aliases = new Discord.Collection();
 bot.categories = fs.readdirSync("./commands/");
 
 ["command"].forEach(handler => {
-    require(`./handlers/${handler}`)(bot);
+    require(`./main/handlers/${handler}`)(bot);
 })
 
 /**
  * Event Handler
  * 
- * Read in each event file from ./events and then setup listeners for each event
+ * Read in each event file from ./main/events and then setup listeners for each event
  * on the bot client. Each event will be called with `bot, ...args`, i.e. it's normal
  * parameters preceeded with a reference to the bot client.
  */
 const {
     readdirSync
 } = require('fs');
-let events = readdirSync('./events/');
+let events = readdirSync('./main/events/');
 events.forEach(file => {
     const name = file.slice(0, -3);
-    const event = require(`./events/${file}`);
+    const event = require(`./main/events/${file}`);
     bot.on(name, event.bind(null, bot));
 });
 

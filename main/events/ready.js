@@ -12,7 +12,7 @@ module.exports = async (bot) => {
     //SET USER PRESENCE TO STREAMING
     bot.user.setPresence({
         game: {
-            name: `On ${bot.settings.mcname}!`,
+            name: `on ${bot.settings.mcname}!`,
             type: 'STREAMING',
             url: 'https://www.twitch.tv/deadpicsel'
         }

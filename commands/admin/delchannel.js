@@ -2,7 +2,7 @@ module.exports = {
     name: "delchannel",
     category: "admin",
     description: "Deletes mentioned channel.",
-    example: "-delchannel #dead-channel",
+    usage: "-delchannel <#channel>",
     permission: "ADMINS",
     run: async (bot, message, args) => {
 

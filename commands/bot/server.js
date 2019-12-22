@@ -2,7 +2,7 @@ module.exports = {
     name: "server",
     category: "bot",
     description: "Gain information about the server the command is ran in..",
-    example: "-serverinfo",
+    usage: "-server",
     permission: "EVERYONE",
     run: async (bot, message, args) => {
 
