@@ -102,6 +102,9 @@ bot.on("message", async message => {
 });
 
 //Usage Statistics
+
+const chalk = require('chalk');
+
 const memusage = JSON.parse(fs.readFileSync("./data/memory-usage.json", "utf8"));
 var getMemUsage = () => {
     const arr = [1, 2, 3, 4, 5, 6, 9, 7, 8, 9, 10];
@@ -117,7 +120,7 @@ bot.setInterval(function() {
     let memoryusage = getMemUsage();
     let guilds = bot.guilds.size;
     let ping = Math.floor(bot.ping);
-    console.log(`[INFO]`.grey, `Memory Usage: ${memoryusage}`.yellow, `\n[INFO]`.grey, `Ping: ${ping}`.yellow, `\n[INFO]`.grey, `Guilds: ${guilds}`.yellow);
+    console.log(chalk.gray(`[INFO]`), chalk.yellow(`Memory Usage: ${memoryusage}`), chalk.gray(`\n[INFO]`), chalk.yellow(`Ping: ${ping}`), chalk.gray(`\n[INFO]`), chalk.yellow(`Guilds: ${guilds}`));
 }, 300000);
 
 //so it actually works

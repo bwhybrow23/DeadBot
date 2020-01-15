@@ -23,7 +23,19 @@ module.exports = async (bot, member) => {
     //member.guild.channels.find("id", "538059121363124224").setName(`Member Count: ${member.guild.memberCount}`);
 
     //ADD ROLE(S) TO USER
-    let memberRole = member.guild.roles.find("name", "Member");
+    let memberRole = member.guild.roles.find("id", "657662299829698561");
     member.addRole(memberRole).catch(console.error);
+
+    let spacerRole1 = member.guild.roles.find("id", "659154399742001152");
+    member.addRole(spacerRole1).catch(console.error);
+
+    let spacerRole2 = member.guild.roles.find("id", "659155152988536843");
+    member.addRole(spacerRole2).catch(console.error);
+
+    let spacerRole3 = member.guild.roles.find("id", "659154612577763359");
+    member.addRole(spacerRole3).catch(console.error); 
+
+    let spacerRole4 = member.guild.roles.find("id", "659158292391526425");
+    member.addRole(spacerRole4).catch(console.error); 
 
 }

@@ -9,7 +9,7 @@ module.exports = {
         const Discord = require("discord.js");
         const adminperm = message.member.hasPermission("ADMINISTRATOR");
 
-
+        let date = new Date;
         var access = true;
 
         if (adminperm == false) {
@@ -60,17 +60,18 @@ module.exports = {
             })
         };
 
-        message.channel.send({
-            embed: {
-                color: bot.settings.color.green,
-                description: `${msg}`,
-                footer: {
-                    "icon_url": bot.user.displayURL,
-                    "text": "Say Command | Powered by Bearded Dragons"
-                },
-                timestamp: date
-            }
-        });
+        // message.channel.send({
+        //     embed: {
+        //         color: bot.settings.color.green,
+        //         description: `${msg}`,
+        //         footer: {
+        //             "icon_url": bot.user.displayURL,
+        //             "text": "Say Command | Powered by Bearded Dragons"
+        //         },
+        //         timestamp: date
+        //     }
+        // });
+        message.channel.send(msg);
         message.delete();
     }
 };

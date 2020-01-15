@@ -1,13 +1,13 @@
 module.exports = async (bot) => {
 
-    const Discord = require("discord.js");
-
     const utils = require("../functions/utilities.js");
+    const chalk = require('chalk');
 
     //CONSOLE LOG IT BEING TURNED ON
     let date = new Date;
-    // console.log('[SYSTEM]'.grey, `${bot.name} Has Started Successfully. Version: ${bot.settings.version}`.green);
-    console.log(`${bot.user.username} has started succesfully on version ${bot.settings.version}!`)
+    console.log(chalk.gray(`[SYSTEM]`), chalk.green(`${bot.user.username} has Started Succesfully. Version: ${bot.settings.version}`));
+    // console.log('[SYSTEM]'.grey, `${bot.user.username} Has Started Successfully. Version: ${bot.settings.version}`.green);
+    // console.log(`${bot.user.username} has started succesfully on version ${bot.settings.version}!`)
 
     //SET USER PRESENCE TO STREAMING
     bot.user.setPresence({
