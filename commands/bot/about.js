@@ -6,7 +6,7 @@ module.exports = {
     permission: "EVERYONE",
     run: async (bot, message, args) => {
 
-    //const settings = require('../main/settings.json');
+    //const settings = require('/home/stentorian/main/settings.json');
     const Discord = require("discord.js");
 
     let userimage = message.author.avatarURL;

@@ -85,7 +85,7 @@ module.exports = {
                     tMessage.push(newTicketEmbed)
 
                     channel.send(newTicketEmbed);
-                    channel.send("<@&657662291818315786>")
+                    channel.send("<@&706850061618905088>")
                     message.channel.send({
                         embed: {
                             color: bot.settings.color.green,

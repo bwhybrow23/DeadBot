@@ -9,7 +9,7 @@ module.exports = {
     const Discord = require("discord.js");
     const fs = require("fs");
 
-    if (!message.member.roles.has(bot.settings.roles.staffRole)) {
+    if (!message.member.hasPermission("MANAGE_MESSAGES")) {
         return message.channel.send({
             embed: {
                 color: bot.settings.color.red,

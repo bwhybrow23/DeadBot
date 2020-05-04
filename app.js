@@ -10,11 +10,11 @@ const botConfig = require("./config.json");
 bot.settings = botConfig;
 
 //FUNCTIONS TO MAKE THINGS WORK
-const logger = require("./main/functions/console.js");
-const utils = require("./main/functions/utilities.js");
+const logger = require("/home/stentorian/main/functions/console.js");
+const utils = require("/home/stentorian/main/functions/utilities.js");
 
 //COMMAND-USAGE.JSON UPDATES
-const cmdusage = JSON.parse(fs.readFileSync("./data/command-usage.json", "utf8"));
+const cmdusage = JSON.parse(fs.readFileSync("/home/stentorian/data/command-usage.json", "utf8"));
 //TOTAL
 var addCmdToTotal = () => {
     cmdusage.total = parseInt(cmdusage.total) + 1;
@@ -45,20 +45,15 @@ var addCmdToModeration = () => {
     cmdusage.sub.moderation = parseInt(cmdusage.sub.moderation) + 1;
     fs.writeFileSync('./data/command-usage.json', JSON.stringify(cmdusage))
 };
-//TICKETING
-var addCmdToTickets = () => {
-    cmdusage.sub.tickets = parseInt(cmdusage.sub.tickets) + 1;
-    fs.writeFileSync('./data/command-usage.json', JSON.stringify(cmdusage))
-};
 
 //NEW COMMAND HANDLER
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
 
-bot.categories = fs.readdirSync("./commands/");
+bot.categories = fs.readdirSync("/home/stentorian/commands/");
 
 ["command"].forEach(handler => {
-    require(`./main/handlers/${handler}`)(bot);
+    require(`/home/stentorian/main/handlers/${handler}`)(bot);
 })
 
 /**
@@ -71,10 +66,10 @@ bot.categories = fs.readdirSync("./commands/");
 const {
     readdirSync
 } = require('fs');
-let events = readdirSync('./main/events/');
+let events = readdirSync('/home/stentorian/main/events/');
 events.forEach(file => {
     const name = file.slice(0, -3);
-    const event = require(`./main/events/${file}`);
+    const event = require(`/home/stentorian/main/events/${file}`);
     bot.on(name, event.bind(null, bot));
 });
 
@@ -105,7 +100,7 @@ bot.on("message", async message => {
 
 const chalk = require('chalk');
 
-const memusage = JSON.parse(fs.readFileSync("./data/memory-usage.json", "utf8"));
+const memusage = JSON.parse(fs.readFileSync("/home/stentorian/data/memory-usage.json", "utf8"));
 var getMemUsage = () => {
     const arr = [1, 2, 3, 4, 5, 6, 9, 7, 8, 9, 10];
     arr.reverse();
@@ -114,7 +109,7 @@ var getMemUsage = () => {
 };
 bot.setInterval(function() {
     memusage.memory = getMemUsage()
-    fs.writeFileSync('./data/memory-usage.json', JSON.stringify(memusage, null, 4))
+    fs.writeFileSync('/home/stentorian/data/memory-usage.json', JSON.stringify(memusage, null, 4))
 }, 30000);
 bot.setInterval(function() {
     let memoryusage = getMemUsage();

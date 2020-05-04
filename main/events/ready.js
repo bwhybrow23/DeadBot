@@ -1,6 +1,6 @@
 module.exports = async (bot) => {
 
-    const utils = require("../functions/utilities.js");
+    const utils = require("/home/stentorian/main/functions/utilities.js");
     const chalk = require('chalk');
 
     //CONSOLE LOG IT BEING TURNED ON

@@ -8,7 +8,7 @@ module.exports = {
         
     const Discord = require("discord.js");
     const fs = require('fs')
-    const eventFunctions = require(`../../main/functions/eventfunctions.js`);
+    const eventFunctions = require(`/home/stentorian/main/functions/eventfunctions.js`);
 
     if (message.channel.parent.name === "Tickets") {
         if (message.channel.name.startsWith("ticket-")) {
