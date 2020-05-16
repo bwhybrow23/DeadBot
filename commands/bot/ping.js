@@ -7,8 +7,8 @@ module.exports = {
     run: async (bot, message, args) => {
 
     const fs = require('fs');
-    const cmdusage = JSON.parse(fs.readFileSync("/home/stentorian/data/command-usage.json", "utf8"));
-    const memusage = JSON.parse(fs.readFileSync("/home/stentorian/data/memory-usage.json", "utf8"));
+    const cmdusage = JSON.parse(fs.readFileSync("./data/command-usage.json", "utf8"));
+    const memusage = JSON.parse(fs.readFileSync("./data/memory-usage.json", "utf8"));
     const Discord = require("discord.js");
    
    

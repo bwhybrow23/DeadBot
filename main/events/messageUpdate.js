@@ -17,6 +17,10 @@ module.exports = async (bot, oldMessage, newMessage) => {
         .setFooter("Message Edited | Powered by Bearded Dragons", bot.user.avatarURL)
         .setTimestamp();
 
+    if(newMessage.content === oldMessage.content) {
+        return
+    } else {
     logs.send(editMSGEmbed);
+    };
 
-}
+};

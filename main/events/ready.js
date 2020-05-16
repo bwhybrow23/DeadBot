@@ -1,6 +1,6 @@
 module.exports = async (bot) => {
 
-    const utils = require("/home/stentorian/main/functions/utilities.js");
+    const utils = require("../../main/functions/utilities.js");
     const chalk = require('chalk');
 
     //CONSOLE LOG IT BEING TURNED ON
@@ -17,5 +17,13 @@ module.exports = async (bot) => {
             url: 'https://www.twitch.tv/deadpicsel'
         }
     });
+
+    //SET USER PRESENCE TO MAINTENENCE
+    // bot.user.setPresence({
+    //     game: {
+    //         name: `With Code! (Under Maintenence)`,
+    //         type: "Playing"
+    //     }
+    // });
 
 }

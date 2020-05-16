@@ -8,7 +8,7 @@ module.exports = {
     usage: "-changelog [command] [args]",
     run: async (bot, message, args) => {
 
-        const changelogs = JSON.parse(fs.readFileSync("/home/stentorian/data/changelogs.json"));
+        const changelogs = JSON.parse(fs.readFileSync("./data/changelogs.json"));
 
         if (message.member.hasPermission("ADMINISTRATOR") == false) {
             return message.channel.send({
@@ -35,7 +35,7 @@ module.exports = {
                     user: message.author.id
                 };
                 changelogs.count = (parseInt(changelogs.count) + 1).toString();
-                fs.writeFileSync("/home/stentorian/data/changelogs.json", JSON.stringify(changelogs));
+                fs.writeFileSync("./data/changelogs.json", JSON.stringify(changelogs));
                 message.channel.send("Changelog Added!")
                 break;
 
@@ -63,7 +63,7 @@ module.exports = {
                 changelogs.count = "0";
                 changelogs.changelogs = {}
 
-                fs.writeFileSync("/home/stentorian/data/changelogs.json", JSON.stringify(changelogs));
+                fs.writeFileSync("./data/changelogs.json", JSON.stringify(changelogs));
 
                 toPublish.forEach((v, k) => {
                     embed.addField(`Update ${parseInt(k)+1}`, `${v.message} | By: ${message.guild.members.get(v.user).toString()}`)

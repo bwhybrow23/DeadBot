@@ -1,7 +1,7 @@
 module.exports = {
     name: "server",
     category: "bot",
-    description: "Gain information about the server the command is ran in..",
+    description: "Gain information about the server the command is ran in.",
     usage: "-server",
     permission: "EVERYONE",
     run: async (bot, message, args) => {

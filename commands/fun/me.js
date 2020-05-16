@@ -30,9 +30,10 @@ module.exports = {
             .addField("Nickname", `${member.nickname !== null ? `Nickname: ${member.nickname}` : "None"}`, true)
             .addField("Bot", `${bot}`, inline, true)
             .addField("Status", `Do Not Disturb/DND`, inline, true)
-            .addField("Playing", `${member.user.presence.game ? `🎮 ${member.user.presence.game.name}` : "Not playing"}`, inline, true)
+            .addField("Playing", `${member.user.presence.game ? `ðŸŽ® ${member.user.presence.game.name}` : "Not playing"}`, inline, true)
             .addField("Roles", `${member.roles.filter(r => r.id !== message.guild.id).map(roles => `\`${roles.name}\``).join(" **|** ") || "No Roles"}`, true)
             .addField("Joined Discord At", member.user.createdAt)
+	    .addField("Joined PicselCraft At", member.joinedAt)
             .setFooter(`Information about ${member.user.username}`)
             .setTimestamp();
 
@@ -47,9 +48,10 @@ module.exports = {
             .addField("Nickname", `${member.nickname !== null ? `Nickname: ${member.nickname}` : "None"}`, true)
             .addField("Bot", `${bot}`, inline, true)
             .addField("Status", `Online`, inline, true)
-            .addField("Playing", `${member.user.presence.game ? `🎮 ${member.user.presence.game.name}` : "Not playing"}`, inline, true)
+            .addField("Playing", `${member.user.presence.game ? `ðŸŽ® ${member.user.presence.game.name}` : "Not playing"}`, inline, true)
             .addField("Roles", `${member.roles.filter(r => r.id !== message.guild.id).map(roles => `\`${roles.name}\``).join(" **|** ") || "No Roles"}`, true)
             .addField("Joined Discord At", member.user.createdAt)
+            .addField("Joined PicselCraft At", member.joinedAt)
             .setFooter(`Information about ${member.user.username}`)
             .setTimestamp();
 
@@ -64,9 +66,10 @@ module.exports = {
             .addField("Nickname", `${member.nickname !== null ? `Nickname: ${member.nickname}` : "None"}`, true)
             .addField("Bot", `${bot}`, inline, true)
             .addField("Status", `Idle`, inline, true)
-            .addField("Playing", `${member.user.presence.game ? `🎮 ${member.user.presence.game.name}` : "Not playing"}`, inline, true)
+            .addField("Playing", `${member.user.presence.game ? `ðŸŽ® ${member.user.presence.game.name}` : "Not playing"}`, inline, true)
             .addField("Roles", `${member.roles.filter(r => r.id !== message.guild.id).map(roles => `\`${roles.name}\``).join(" **|** ") || "No Roles"}`, true)
             .addField("Joined Discord At", member.user.createdAt)
+            .addField("Joined PicselCraft At", member.joinedAt)
             .setFooter(`Information about ${member.user.username}`)
             .setTimestamp();
 
@@ -80,9 +83,10 @@ module.exports = {
             .addField("Nickname", `${member.nickname !== null ? `Nickname: ${member.nickname}` : "None"}`, true)
             .addField("Bot", `${bot}`, inline, true)
             .addField("Status", `Offline`, inline, true)
-            .addField("Playing", `${member.user.presence.game ? `🎮 ${member.user.presence.game.name}` : "Not playing"}`, inline, true)
+            .addField("Playing", `${member.user.presence.game ? `ðŸŽ® ${member.user.presence.game.name}` : "Not playing"}`, inline, true)
             .addField("Roles", `${member.roles.filter(r => r.id !== message.guild.id).map(roles => `\`${roles.name}\``).join(" **|** ") || "No Roles"}`, true)
             .addField("Joined Discord At", member.user.createdAt)
+            .addField("Joined PicselCraft At", member.joinedAt)
             .setFooter(`Information about ${member.user.username}`)
             .setTimestamp();
 

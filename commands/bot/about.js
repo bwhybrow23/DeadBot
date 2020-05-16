@@ -6,7 +6,7 @@ module.exports = {
     permission: "EVERYONE",
     run: async (bot, message, args) => {
 
-    //const settings = require('/home/stentorian/main/settings.json');
+    //const settings = require('/home/stentorian/DeadBot/main/settings.json');
     const Discord = require("discord.js");
 
     let userimage = message.author.avatarURL;
@@ -17,7 +17,7 @@ module.exports = {
         .setColor(bot.settings.color.blue)
         .setTitle('Bot Information')
         .addField('Bot Name', bot.user.tag)
-        .addField('Founded By', '[Stentorian#9524](https://twitter.com/stentorianyt)')
+        .addField('Created By', '[Stentorian#9524](https://discord.benwhybrow.com)')
         .addField('Created On', bot.user.createdAt)
         .addField('Made For', "[DeadPicsel](https://twitch.tv/deadpicsel)")
         .setFooter(`About Command | Powered by Bearded Dragons`, bot.user.displayURL)

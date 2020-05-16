@@ -7,11 +7,11 @@ const ascii = require("ascii-table");
 const table = new ascii().setHeading("Command", "Load status");
 
 module.exports = (client) => {
-    readdirSync("/home/stentorian/commands/").forEach(dir => {
-        const commands = readdirSync(`/home/stentorian/commands/${dir}/`).filter(f => f.endsWith(".js"));
+    readdirSync("./commands/").forEach(dir => {
+        const commands = readdirSync(`./commands/${dir}/`).filter(f => f.endsWith(".js"));
 
         for (let file of commands) {
-            let pull = require(`/home/stentorian/commands/${dir}/${file}`);
+            let pull = require(`../../commands/${dir}/${file}`);
 
             if (pull.name) {
                 client.commands.set(pull.name, pull);
