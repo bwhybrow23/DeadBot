@@ -1,7 +1,7 @@
 {
     "token": "NjU3NzIxODUxMTcwMTI3OTE1.Xf1VfA.F0mOVnrQcWDGM_HhpJAlbWKYHc0",
     "prefix": "-",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "mcname": "PicselCraft",
     "channels": {
         "welcome": "657662325087797293",
@@ -21,7 +21,7 @@
         "guild": "657658276464295986"
     },
     "roles": {
-	"staffRole": "706850061618905088",
+	    "staffRole": "706850061618905088",
         "adminRole": "657658642161467412"
     }
 }
