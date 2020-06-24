@@ -6,7 +6,7 @@
     <a href="https://shields.io/" target="_blank">
         <img src="https://img.shields.io/github/languages/top/bwhybrow23/DeadBot?color=brightgreenn" alt="Main Lang"/>
     </a>
-     <a href="https://github.com/users/bwhybrow23" target="_blank">
+     <a href="https://github.com/bwhybrow23" target="_blank">
         <img src="https://img.shields.io/badge/GitHub-bwhybrow23-blue.svg?logo=github&logoColor=FFF" alt="GitHub"/>
   </a>
     <a href="http://discord.benwhybrow.com/" target="_blank">
@@ -21,10 +21,8 @@ This repository stores files for DeadBot. A private Discord bot for the PicselCr
 
 ### Donating
 
-You can also help me and the project out by sponsoring me through [GitHub Sponsors](https://github.com/users/bwhybrow23/sponsorship) (preferred) or contributing through a [donation on PayPal](http://paypal.benwhybrow.com/).
+You can also help me and the project out by contributing through a [donation on PayPal](http://paypal.benwhybrow.com/).
 <p>
-    <a href="https://github.com/users/bwhybrow23/sponsorship" target="_blank">
-        <img src="https://img.shields.io/badge/GitHub%20Sponsors-bwhybrow23-blue.svg?logo=github&logoColor=FFF" alt="GitHub Sponsors"/>
     <a href="http://paypal.benwhybrow.com/" target="_blank">
         <img src="https://img.shields.io/badge/PayPal-Ben%20Whybrow-blue.svg?logo=paypal&logoColor=00457C" alt="PayPal"/>
     </a>
