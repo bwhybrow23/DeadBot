@@ -17,7 +17,8 @@
 <!-- Content -->
 ## Hello
 
-This repository stores files for DeadBot. A private Discord bot for the PicselCraft Discord Server.
+This repository stores files for DeadBot and PicselCraft-Bot. 
+The files are extremely similar with a few changes for the server but run off the same infastructure. 
 
 ### Donating
 
